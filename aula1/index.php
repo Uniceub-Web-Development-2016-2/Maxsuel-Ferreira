@@ -1,3 +1,3 @@
 <?php
 
-ehco "Caio Muito Louco!!!!!";
+echo "Caio Muito Louco!!!!!";
