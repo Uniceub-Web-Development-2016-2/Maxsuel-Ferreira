@@ -21,7 +21,8 @@ class Request
 
 	public function toString()
 	{
-	
+		$request = $this->protocol."://".$this->ip."/".$this->resourcee"?".$this->parameters;
+		return $request;
 	
 	
 	
