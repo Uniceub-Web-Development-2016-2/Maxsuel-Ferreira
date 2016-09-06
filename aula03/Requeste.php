@@ -23,9 +23,7 @@ class Request{
 
 	public function toString(){
 	  	$parameters = "";
-		foreach($this->parameters as $key => $value){
-			$parameters = $parameters . $key . "=" . $value . "&";
-		}
+		
 		return $this->protocol . "://" . $this->ip  . "/" . $this->resource  . "?" . substr($parameters, 0, -1); 	
 	}
 	
