@@ -1,20 +1,21 @@
 <?php
 
-include_once "model/Request.php";
+include_once "model/request.php";
 include_once "model/Competition.php";
 include_once "database/DatabaseConnector.php";
 
 class UserController
 {
+
     public function register($request)
     {
         $params = $request->get_params();
         $user = new User($params["name"],
                 $params["game"],
                 $params["ip"],
-                $params["description"];
+                $params["description"]);
 
-        $db = new DatabaseConnector("localhost", "jogo", "mysql", "", "root", "");
+        $db = new DatabaseConnector("localhost", "Aula", "mysql", "", "root", "");
 
         $conn = $db->getConnection();
 

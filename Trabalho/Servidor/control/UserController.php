@@ -21,7 +21,7 @@ class UserController
 				$params["sexo"],
 				$params["password"]);
 
-			$db = new DatabaseConnector("localhost", "jogo", "mysql", "", "root", "");
+			$db = new DatabaseConnector("localhost", "Aula", "mysql", "", "root", "");
 
 			$conn = $db->getConnection();
 
@@ -45,10 +45,14 @@ class UserController
 	{
 		$params = $request->get_params();
 		$crit = $this->generateCriteria($params);
-		$db = new DatabaseConnector("localhost", "facebook", "mysql", "", "root", "");
-		$conn = $db->getConnection();
-		$result = $conn->query("SELECT first_name, last_name, email, birthdate, phone FROM user WHERE ".$crit);
-		//foreach($result as $row)
+		$db = new DatabaseConnector("localhost", "Aula", "mysql", "", "root", "");
+
+
+      $conn = $db->getConnection();
+
+		$result = $conn->query("SELECT first_name, last_name, email, birthdate, phone FROM user WHERE " . $crit);
+
+			foreach($result as $row)
 		return $result->fetchAll(PDO::FETCH_ASSOC);
 	}
 	private function generateCriteria($params)

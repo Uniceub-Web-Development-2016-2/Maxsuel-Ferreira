@@ -1,12 +1,13 @@
 <?php
+
 class Competition{
-    
+
     private $name;
     private $game;
     private $ip;
     private $description;
 
-public function__construct($name, $game, $ip, $description){
+public function construct($name, $game, $ip, $description){
 $this->name  = $name;
 $this->game = $game;
 $this->ip = $ip;

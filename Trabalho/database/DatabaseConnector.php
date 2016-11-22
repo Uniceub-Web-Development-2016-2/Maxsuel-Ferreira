@@ -23,7 +23,7 @@ class DatabaseConnector
 	public function getConnection()
 	{
 		$stringPDO = $this->type.":host=".$this->ip.";dbname=".$this->db_name;
-		
+
 		try{
 			$connection = new PDO($stringPDO,
 				$this->user, 
@@ -31,6 +31,7 @@ class DatabaseConnector
 
 		 }catch(PDOException $e)
 		 {
+		     echo $e."<br><br><br><br><br>";
 		 	var_dump($e);
 		 }
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Class13_DBConnection.iml" filepath="$PROJECT_DIR$/.idea/Class13_DBConnection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Cliente.iml" filepath="$PROJECT_DIR$/.idea/Cliente.iml" />
     </modules>
   </component>
 </project>
