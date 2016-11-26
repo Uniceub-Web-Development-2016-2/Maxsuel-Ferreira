@@ -10,11 +10,10 @@ class User
 
 
 
-	public function __construct($name, $last_name,
+	public function __construct($name,
 	$email, $birthdate, $sexo, $password)
 	{
 		$this->name = $name;
-		$this->last_name = $last_name;
 		$this->email = $email;
 		$this->birthdate = $birthdate;
 		$this->sexo = $sexo;
@@ -26,10 +25,6 @@ class User
 		return $this->name;
 	}
 
-	public function getLastname()
-	{
-		return $this->last_name;
-	}
 
 	public function getSexo()
 	{

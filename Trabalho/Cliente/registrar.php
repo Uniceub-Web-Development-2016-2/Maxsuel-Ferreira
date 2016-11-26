@@ -1,0 +1,66 @@
+<!Doctype html>
+<head>
+
+</head>
+
+<body>
+<form action="Registrando.php" method="POST">
+
+
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="usuario" required>
+
+    <br><br>
+
+    <label for="primeiro_nome">Primeiro Nome: </label>
+    <input type="text" name="" id="name" required>
+
+    <br><br>
+
+    <label for="sobrenome">Sobrenome: </label>
+    <input type="password" name="senha" id="senha" required>
+
+    <br><br>
+
+    <label for="password">Senha: </label>
+    <input type="password" name="password" id="senha" required>
+
+    <br><br>
+
+    <label for="email">E-mail: </label>
+    <input type="text" name="email" id="email" required>
+
+    <br><br>
+
+    <div class="group">
+        <label class="radio" for="gener_m">Masculino </label>
+        <input type="radio" name="genero" id="gener_m" value="m">
+
+    </div>
+
+    <div class="group">
+        <label class="radio" for="gener_f">Feminino </label>
+        <input type="radio" name="genero" id="gener_f" value="f">
+
+    </div>
+
+    <br><br>
+
+    <label for="birthdate">Data de Nascimento: </label>
+    <input type="text" name="birthdate" id="birthdate" required>
+
+    <br><br>
+
+    <input type="submit" value="Cadastrar">
+
+</form>
+
+
+</form>
+
+
+</body>
+
+
+
+    </html>

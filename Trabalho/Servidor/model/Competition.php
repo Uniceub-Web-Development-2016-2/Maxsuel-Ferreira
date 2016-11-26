@@ -4,40 +4,40 @@ class Competition{
 
     private $name;
     private $game;
-    private $ip;
+    private $id ;
     private $description;
 
-public function construct($name, $game, $ip, $description){
-$this->name  = $name;
-$this->game = $game;
-$this->ip = $ip;
-$this->descripion = $description;
+    public function construct($name, $game, $id, $description){
+        $this->name  = $name;
+        $this->game = $game;
+        $this->ip = $id;
+        $this->descripion = $description;
 
-}
-public function getName(){
-    return $this->name;
-}
-public function getGame(){
-    return $this->game;
-}
-public function getIp(){
-    return $this->ip;
-}
-public function getDescripion(){
-    return $this->descripion;
-}
-public function setName($name){
-    $this->name = $name;
-}
+    }
+    public function getName(){
+        return $this->name;
+    }
+    public function getGame(){
+        return $this->game;
+    }
+    public function getId(){
+        return $this->id;
+    }
+    public function getDescripion(){
+        return $this->descripion;
+    }
+    public function setName($name){
+        $this->name = $name;
+    }
 
-public function setGame($game){
-    $this->game = $game;
-}
+    public function setGame($game){
+        $this->game = $game;
+    }
 
-public function setIp($ip){
-    $this->ip = $ip;
-}
-public function setDescription($description){
-    $this->description = $description;
-}
+    public function setId($id){
+        $this->id = $id;
+    }
+    public function setDescription($description){
+        $this->description = $description;
+    }
 }

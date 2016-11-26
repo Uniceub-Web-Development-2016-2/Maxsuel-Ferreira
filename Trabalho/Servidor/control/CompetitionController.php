@@ -12,7 +12,7 @@ class UserController
         $params = $request->get_params();
         $user = new User($params["name"],
                 $params["game"],
-                $params["ip"],
+                $params["id"],
                 $params["description"]);
 
         $db = new DatabaseConnector("localhost", "Aula", "mysql", "", "root", "");
@@ -25,9 +25,9 @@ class UserController
 
     private function generateInsertQuery($user)
     {
-        $query =  "INSERT INTO user (name, game, ip, description) VALUES ('".$user->getName()."','".
+        $query =  "INSERT INTO user (name, game, id, description) VALUES ('".$user->getName()."','".
             $user->getGame()."','".
-            $user->getIp()."','".
+            $user->getId()."','".
             $user->getDescrition()."','";
 
         return $query;

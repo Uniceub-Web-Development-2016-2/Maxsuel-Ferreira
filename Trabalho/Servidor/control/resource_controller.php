@@ -28,17 +28,26 @@ class ResourceController
 	}
 
 	public function login($request) {
-		$query = 'SELECT * FROM '.$request->getResource().' WHERE '.self::bodyParams($request->getBody());
-		$result = (new DBConnector())->query($query); 
-                return $result->fetchAll(PDO::FETCH_ASSOC);
+
+		$query = 'SELECT * FROM user WHERE '.self::bodyParams($request->getBody());
+        $result = (new DBConnector())->query($query);
+        return $result->fetchAll(PDO::FETCH_ASSOC);
 		
 
 	}	
 
 	private function search($request) {
-        $query = 'SELECT * FROM '.$request->getResource().' WHERE '.self::queryParams($request->getParameters());
-		$result = (new DBConnector())->query($query);
-		return $result->fetchAll(PDO::FETCH_ASSOC);
+
+        if(empty( $request->getParameters())){
+            $query = 'SELECT * FROM '.$request->getResource();
+            $result = (new DBConnector())->query($query);
+            return $result->fetchAll(PDO::FETCH_ASSOC);
+        }else{
+            $query = 'SELECT * FROM '.$request->getResource().' WHERE '.self::queryParams($request->getParameters());
+            $result = (new DBConnector())->query($query);
+            return $result->fetchAll(PDO::FETCH_ASSOC);
+        }
+
 	}
 	
 	private function create($request) {
