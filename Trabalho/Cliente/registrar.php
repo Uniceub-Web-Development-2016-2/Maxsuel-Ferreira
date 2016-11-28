@@ -7,18 +7,12 @@
 <form action="Registrando.php" method="POST">
 
 
-    <label for="email">Email:</label>
-    <input type="text" name="email" id="usuario" required>
 
     <br><br>
 
-    <label for="primeiro_nome">Primeiro Nome: </label>
+    <label for="name">Nome: </label>
     <input type="text" name="" id="name" required>
 
-    <br><br>
-
-    <label for="sobrenome">Sobrenome: </label>
-    <input type="password" name="senha" id="senha" required>
 
     <br><br>
 
@@ -47,7 +41,7 @@
     <br><br>
 
     <label for="birthdate">Data de Nascimento: </label>
-    <input type="text" name="birthdate" id="birthdate" required>
+    <input type="date" name="birthdate" id="birthdate" required>
 
     <br><br>
 

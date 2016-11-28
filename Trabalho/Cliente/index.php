@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>CEUB</title>
+    <title>IGame</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -21,7 +21,10 @@
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-12">
-					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle">
+					<div class="col-md-1">
+						<img alt="Bootstrap Image Preview" src="http://www.pcgameware.co.uk/images/iGame-logo.png" class="img-circle">
+						<h1><IGame></IGame></h1>
+					</div>
 				</div>
 			</div>
 			<form class="form-horizontal" action="login.php" method="post">
@@ -49,6 +52,7 @@
 							 
 							<label>
 								<input type="checkbox"> Remember me
+
 							</label>
 						</div>
 					</div>
@@ -57,7 +61,7 @@
 					<div class="col-sm-offset-2 col-sm-10">
 						 
 						<button type="submit" class="btn btn-default">
-							Sign in
+							Login
 						</button>
 					</div>
 				</div>
